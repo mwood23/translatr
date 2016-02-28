@@ -1,0 +1,39 @@
+html { 
+  background: url(../img/translate_original.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.input-text {
+	background-color: white;
+	border-radius: 2px;
+	height: 3.5rem;
+	opacity: .9;
+	border: 1px solid #f2f2f2;
+}
+
+.input-height {
+	height: 3.5rem;
+}
+
+.full-page {
+	height: 100vh;
+	position: relative;
+}
+.input-section {
+	/*background-color: gray;
+	opacity: .8;*/
+	padding: 20px;
+	position: absolute;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
+.translated-text {
+	padding-top: 60px;
+	text-align: center;
+	color: white;
+}

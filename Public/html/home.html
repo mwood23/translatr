@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html ng-app="translateMod">
+<head>
+	<title>Translatr</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	 <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+
+          
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+
+
+
+
+</head>
+<body ng-controller="translateCtrl">
+<div class="container .full-page">
+	<h1 class="white-text page-title">Translatr</h1>
+	<h2 class="translated-text flow-text">{{showText}}</h2>
+	<!-- <img src="../img/translator.png"> -->
+
+	<!-- <form ng-submit="translateThis()">
+		<select ng-model="translation.languageFrom" ng-options="language.code as language.name for language in languages"></select>
+		<input ng-model="translation.text" placeholder="text"></input>
+		<select ng-model="translation.languageTo" ng-options="language.code as language.name for language in languages"></select>
+		
+		<input type="submit" value="Submit"></input>
+	</form> -->
+	<div class="container input-section">
+	<div class="row">
+		<form class="col m12" ng-submit="translateThis()">
+			<div class="row">
+				<div class="input-field input-text s12 col m4">
+					<input placeholder="Text to be Translated" ng-model="translation.text" type="text" class="validate">
+				</div>
+				<div class="input-field col s12 m4">
+					<select class="browser-default input-height" ng-model="translation.languageFrom" ng-options="language.code as language.name for language in languages">
+						<option value="" disabled selected>Translate From</option>
+					</select>
+				</div>
+				<div class="input-field col s12 m4">
+					<select class="browser-default input-height" ng-model="translation.languageTo" ng-options="language.code as language.name for language in languages">
+						<option value="" disabled selected>Translate To</option>
+					</select>
+				</div>
+			</div>
+			<input class="waves-effect waves-light btn orange darken-1" type="submit" value="Submit"></input>
+		</form>
+	</div>
+	</div>
+        
+
+
+	
+
+
+
+
+
+
+<!-- <a href="/login"><button class="waves-effect waves-light btn">Login or Create an Account</button></a> -->
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+	<script type="text/javascript" src="../javascripts/translateMod.js"></script>
+	<script type="text/javascript" src="../javascripts/translateCtrl.js"></script>
+	<script type="text/javascript" src="../javascripts/translateFac.js"></script>
+          
+</body>
+</html>
