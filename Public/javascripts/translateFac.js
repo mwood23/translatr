@@ -1,7 +1,8 @@
 angular.module('translateMod')
 	.factory('translateFac', function(){
 		var languages = [
-
+			
+			{name: "English" , code : "en"},
 		    {name: "Afrikaans" , code : "af"},
 		    {name: "Albanian" , code : "sq"},
 		    {name: "Arabic" , code : "ar"},
@@ -19,7 +20,6 @@ angular.module('translateMod')
 		    {name: "Czech" , code : "cs"},
 		    {name: "Danish" , code : "da"},
 		    {name: "Dutch" , code : "nl"},
-		    {name: "English" , code : "en"},
 		    {name: "Esperanto" , code : "eo"},
 		    {name: "Estonian" , code : "et"},
 		    {name: "Filipino" , code : "tl"},
