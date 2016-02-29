@@ -24,8 +24,6 @@ html {
 	position: relative;
 }
 .input-section {
-	/*background-color: gray;
-	opacity: .8;*/
 	padding: 20px;
 	position: absolute;
   	top: 50%;
@@ -33,7 +31,15 @@ html {
 }
 
 .translated-text {
-	padding-top: 60px;
+/*	padding-top: 40px;*/
 	text-align: center;
 	color: white;
+}
+
+/*Mobile Styling*/
+@media (max-width: 600px) {
+  .input-section {
+    text-align: right;
+    top: 75%;
+  }
 }
